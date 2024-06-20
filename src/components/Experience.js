@@ -1,17 +1,17 @@
 import React from 'react';
 import { Box, Heading, Text } from '@chakra-ui/react';
 
-function About() {
+function Experience() {
   return (
-    <Box textAlign="center" py={10} px={6}>
+    <Box id="experience" textAlign="center" py={10} px={6}>
       <Heading as="h1" size="2xl" mb={4}>
-        About Me
+        My Experience
       </Heading>
       <Text fontSize="xl">
-        I am a software developer with experience in building React applications.
+        Here is a detailed description of my experience.
       </Text>
     </Box>
   );
 }
 
-export default About;
+export default Experience;

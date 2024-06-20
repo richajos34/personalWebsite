@@ -3,7 +3,7 @@ import { Box, Heading, Text, Button } from '@chakra-ui/react';
 
 function Home() {
   return (
-    <Box textAlign="center" py={10} px={6}>
+    <Box id="home" textAlign="center" py={10} px={6} mt="60px">
       <Heading as="h1" size="2xl" mb={4}>
         Welcome to My Personal Website
       </Heading>

@@ -3,7 +3,7 @@ import { Box, Heading, Text, SimpleGrid, Card, CardBody } from '@chakra-ui/react
 
 function Projects() {
   return (
-    <Box textAlign="center" py={10} px={6}>
+    <Box id="projects" textAlign="center" py={10} px={6}>
       <Heading as="h1" size="2xl" mb={4}>
         My Projects
       </Heading>
