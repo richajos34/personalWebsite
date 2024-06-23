@@ -1,5 +1,7 @@
 /* index.css */
 
+/* index.css or a custom CSS file */
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,5 +12,5 @@ body {
 }
 
 #root {
-  padding-top: 60px; /* Adjust this value based on the height of your Navbar */
+  padding-top: 60px; 
 }

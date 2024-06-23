@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <Flex bg="teal.500" color="white" px={4} py={2} alignItems="center" position="fixed" width="100%" top="0" zIndex="1000">
       <Box fontWeight="bold" fontSize="xl">
-        MyWebsite
+        Richa Jos
       </Box>
       <Box ml="auto">
         <Link href="#home" mx={2}>

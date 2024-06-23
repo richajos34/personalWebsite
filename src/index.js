@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ChakraProvider } from '@chakra-ui/react';
-import './index.css';
+import '/Users/richajos/Desktop/Projects/personalWebsite/src/css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
