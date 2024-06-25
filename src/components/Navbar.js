@@ -1,9 +1,10 @@
 import React from 'react';
 import { Flex, Box, Link, Button } from '@chakra-ui/react';
+import DarkModeToggle from './DarkModeToggle';
 
 function Navbar() {
   return (
-    <Flex bg="teal.500" color="white" px={4} py={2} alignItems="center" position="fixed" width="100%" top="0" zIndex="1000">
+    <Flex bg="#009688" color="white" px={4} py={2} alignItems="center" position="fixed" width="100%" top="0" zIndex="1000">
       <Box fontWeight="bold" fontSize="xl">
         Richa Jos
       </Box>
@@ -23,6 +24,7 @@ function Navbar() {
         <Button href="#contact" colorScheme="teal" variant="outline" ml={4}>
           Get in Touch
         </Button>
+        <DarkModeToggle />
       </Box>
     </Flex>
   );

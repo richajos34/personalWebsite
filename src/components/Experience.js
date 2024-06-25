@@ -56,26 +56,26 @@ function Experience() {
           width="80%"
           textAlign="left"
         >
-          <Heading as="h2" size="lg" mb={2}>
+          <Heading as="h2" size="lg" mb={2} color="black">
             Past Experience
           </Heading>
-          <Text fontSize="lg" mb={2}>
+          <Text fontSize="lg" mb={2} color="black">
             <strong>Internship 1</strong> - Software Engineering Intern at Company 1
           </Text>
-          <Text fontSize="md" mb={2}>
+          <Text fontSize="md" mb={2} color="black">
             January 2024 - May 2024
           </Text>
-          <Text fontSize="md" mb={2}>
+          <Text fontSize="md" mb={2} color="black">
             Worked on developing backend services using Node.js and Express. Improved the performance of API endpoints and integrated various third-party services.
           </Text>
           <Spacer />
-          <Text fontSize="lg" mb={2}>
+          <Text fontSize="lg" mb={2} color="black">
             <strong>Internship 1</strong> - Software Engineering Intern at Company 1
           </Text>
-          <Text fontSize="md" mb={2}>
+          <Text fontSize="md" mb={2} color="black">
             January 2024 - May 2024
           </Text>
-          <Text fontSize="md" mb={2}>
+          <Text fontSize="md" mb={2} color="black">
           Created 7 site pages using React for hiring platform connecting Managers and Recruiters within Next.js framework
 Integrated a Job Posting ChatBot using AWS Lex, facilitating the creation of job postings.
 Led API development using Node.js, streamlining interaction between managers and recruiters
@@ -83,13 +83,13 @@ Created JSON schemas to capture chatbot inputs for job postings stored in Dynamo
 Contributed and to a team that developed an AI-driven matching algorithm, which improved hiring accuracy over previous methods by analyzing and matching recruiter submissions with job requirements.
 
           </Text>
-          <Text fontSize="lg" mb={2}>
+          <Text fontSize="lg" mb={2} color="black">
             <strong>Internship 2</strong> - Software Engineering Intern at Company 2
           </Text>
-          <Text fontSize="md" mb={2}>
+          <Text fontSize="md" mb={2} color="black">
             May 2023 - August 2023
           </Text>
-          <Text fontSize="md" mb={2}>
+          <Text fontSize="md" mb={2} color="black">
           Worked in a cross-functional team, providing support and gaining insights into project lifecycle management.
 Assisted in backend development for new UI features, enhancing the application’s performance and user experience.
 Helped develop and prototype a new feature, tags, using ARKit/Swift to allow users to save and continue projects.

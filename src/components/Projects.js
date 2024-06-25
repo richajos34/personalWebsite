@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text, Image, Flex } from '@chakra-ui/react';
+import { Box, Heading, Text, Image, Flex, useColorModeValue } from '@chakra-ui/react';
 import Slider from 'react-slick';
 import springLogo from '../assets/Spring_Framework.png';
 import javaLogo from '../assets/java.png';
@@ -14,6 +14,8 @@ import docker from '../assets/docker.png';
 import '/Users/richajos/Desktop/Projects/personalWebsite/src/css/projects.css'; // Make sure to create and import your custom CSS file
 
 function Projects() {
+  const cardBg = useColorModeValue('white', 'gray.800')
+
   const settings = {
     dots: true,
     infinite: true,
