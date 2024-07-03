@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Box, Button, FormControl, FormLabel, Input, Textarea, useToast } from '@chakra-ui/react';
+import { Box, Button, FormControl, FormLabel, Input, Textarea, Flex, useToast, Heading, Container } from '@chakra-ui/react';
 import emailjs from 'emailjs-com';
 
 function ContactForm() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ firstName: '', lastName: '', email: '', message: '' });
   const toast = useToast();
 
   const handleChange = (e) => {
@@ -27,7 +27,7 @@ function ContactForm() {
         duration: 5000,
         isClosable: true,
       });
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ firstName: '', lastName: '', email: '', message: '' });
     }).catch((err) => {
       console.log('FAILED...', err);
       toast({
@@ -41,26 +41,32 @@ function ContactForm() {
   };
 
   return (
-    <Box
-      bg="gray.700"
-      p={6}
-      borderRadius="md"
-      boxShadow="md"
-      maxW="600px"
-      mx="auto"
-      my={10}
-      color="white"
-    >
+    <Box p={10} color="black">
+      <Heading as="h2" size="xl" mb={6}>
+        Get in touch
+      </Heading>
+      <Flex direction="right" align="center" w="full" maxW="1200px" justify="space-between">
       <form onSubmit={handleSubmit}>
-        <FormControl id="name" isRequired mb={4}>
-          <FormLabel>Name</FormLabel>
+        <FormControl id="firstName" isRequired mb={4}>
+          <FormLabel>First Name</FormLabel>
           <Input
-            name="name"
-            value={formData.name}
+            name="firstName"
+            value={formData.firstName}
             onChange={handleChange}
-            bg="gray.800"
-            borderColor="gray.600"
-            _hover={{ borderColor: 'gray.500' }}
+            variant="flushed"
+            borderColor="gray.400"
+            _focus={{ borderColor: 'gray.600' }}
+          />
+        </FormControl>
+        <FormControl id="lastName" isRequired mb={4}>
+          <FormLabel>Last Name</FormLabel>
+          <Input
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            variant="flushed"
+            borderColor="gray.400"
+            _focus={{ borderColor: 'gray.600' }}
           />
         </FormControl>
         <FormControl id="email" isRequired mb={4}>
@@ -70,9 +76,9 @@ function ContactForm() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            bg="gray.800"
-            borderColor="gray.600"
-            _hover={{ borderColor: 'gray.500' }}
+            variant="flushed"
+            borderColor="gray.400"
+            _focus={{ borderColor: 'gray.600' }}
           />
         </FormControl>
         <FormControl id="message" isRequired mb={4}>
@@ -81,15 +87,15 @@ function ContactForm() {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            bg="gray.800"
-            borderColor="gray.600"
-            _hover={{ borderColor: 'gray.500' }}
+            borderColor="gray.400"
+            _focus={{ borderColor: 'gray.600' }}
           />
         </FormControl>
-        <Button type="submit" colorScheme="teal" size="lg" width="full">
-          Send Message
+        <Button type="submit" colorScheme="teal" size="lg" mt={4}>
+          Submit
         </Button>
       </form>
+      </Flex>
     </Box>
   );
 }
