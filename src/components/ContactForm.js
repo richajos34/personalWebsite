@@ -47,22 +47,11 @@ function ContactForm() {
       </Heading>
       <Flex direction="right" align="center" w="full" maxW="1200px" justify="space-between">
       <form onSubmit={handleSubmit}>
-        <FormControl id="firstName" isRequired mb={4}>
+        <FormControl id="name" isRequired mb={4}>
           <FormLabel>First Name</FormLabel>
           <Input
-            name="firstName"
+            name="Name"
             value={formData.firstName}
-            onChange={handleChange}
-            variant="flushed"
-            borderColor="gray.400"
-            _focus={{ borderColor: 'gray.600' }}
-          />
-        </FormControl>
-        <FormControl id="lastName" isRequired mb={4}>
-          <FormLabel>Last Name</FormLabel>
-          <Input
-            name="lastName"
-            value={formData.lastName}
             onChange={handleChange}
             variant="flushed"
             borderColor="gray.400"
