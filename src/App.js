@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Coursework from './components/Coursework';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Experience />
       <Education />
       <Coursework />
+      <ContactForm />
     </>
   );
 }
