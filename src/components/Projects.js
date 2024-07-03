@@ -11,7 +11,7 @@ import python from '../assets/python.png';
 import nodejs from '../assets/nodejs.png';
 import reactLogo from '../assets/react.png';
 import docker from '../assets/docker.png';
-import '/Users/richajos/Desktop/Projects/personalWebsite/src/css/projects.css'; // Make sure to create and import your custom CSS file
+import '../css/projects.css';
 
 function Projects() {
   const cardBg = useColorModeValue('white', 'gray.800')
@@ -65,6 +65,26 @@ function Projects() {
             <Box className="flip-card-back" p={4}>
               <Heading size="md" mt={4}>Cricket Visualizer</Heading>
               <Text mt={4}>Detailed information about the Cricket Visualizer project, including its features and technologies used.</Text>
+            </Box>
+          </Box>
+        </Box>
+        
+        <Box p={4} className="flip-card">
+          <Box className="flip-card-inner">
+            <Box className="flip-card-front" p={4}>
+              <Heading size="md" mt={4}>Video Convolution Processor</Heading>
+              <Text mt={4}>Optimized 2D convolutions for video processing to achieve significant speedups.</Text>
+              <Flex mt={4} justifyContent="center" alignItems="center">
+                <Image src={docker} alt="Docker Logo" boxSize="40px" mx={2} />
+                <Image src={nodejs} alt="Node.js Logo" boxSize="40px" mx={2} />
+                <Image src={mongoDB} alt="Mongo DB Logo" boxSize="40px" mx={2} />
+                <Image src={reactLogo} alt="React Logo" boxSize="40px" mx={2} />
+                <Image src={javaScriptLogo} alt="JavaScript Logo" boxSize="40px" mx={2} />
+              </Flex>
+            </Box>
+            <Box className="flip-card-back" p={4}>
+              <Heading size="md" mt={4}>Notium</Heading>
+              <Text mt={4}>Detailed information about the Notium project, including its features and technologies used.</Text>
             </Box>
           </Box>
         </Box>
