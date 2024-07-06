@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Coursework from './components/Coursework';
 import ContactForm from './components/ContactForm';
+import Extracurriculars from './components/Extracurriculars';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Projects />
       <Experience />
       <Education />
+      <Extracurriculars />
       <Coursework />
       <ContactForm />
     </>

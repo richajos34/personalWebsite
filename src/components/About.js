@@ -30,7 +30,7 @@ function About() {
           I AM RICHA JOS
         </Heading>
         <Text fontSize="lg" mb={6} maxW="600px">
-          I am a full stack developer with a passion for building dynamic and responsive web applications. Currently pursuing a Bachelor of Science in Electrical Engineering and Computer Science at the University of California, Berkeley, I have honed my skills in various programming languages and frameworks, including Java, Python, JavaScript, and TypeScript. My projects, such as SafeZone and Cricket Visualizer, reflect my commitment to leveraging technology to solve real-world problems and enhance user experiences. Beyond coding, I have a deep interest in artificial intelligence and machine learning, exploring how AI can be integrated into everyday applications. In my free time, I dive into the latest tech advancements, experiment with new tools, read science fiction novels, and play strategy-based video games, which help me think critically and creatively.
+          I am a full stack developer with a passion for building scalable and responsive web applications. Currently pursuing a Bachelor of Science in Electrical Engineering and Computer Science, I have honed my skills in various programming languages, most notibly Java, Python, and C. My projects, reflect my commitment to leveraging technology to solve real-world problems and enhance the experiences of my peers around me. Beyond coding, I have a deep interest in artificial intelligence, exploring how AI can be integrated into everyday applications. When i'm not busy coding, I enjoy playing badminton, tennis, painting, and cooking!
         </Text>
         <Button colorScheme="teal" size="lg" mb={6}>
           Learn More

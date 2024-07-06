@@ -38,7 +38,7 @@ function Education() {
             August 2022 - May 2026
           </Text>
           <Text fontSize="md" mb={2}>
-            Extracurriculars: Web Development at Berkeley, Computer Science Kickstart
+            Minors: Data Science
           </Text>
           <Spacer />
           </Box>
