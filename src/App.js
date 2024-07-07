@@ -8,12 +8,14 @@ import Education from './components/Education';
 import Coursework from './components/Coursework';
 import ContactForm from './components/ContactForm';
 import Extracurriculars from './components/Extracurriculars';
+import Skills from './components/Skills';
 
 function App() {
   return (
     <>
       <Navbar />
       <About />
+      <Skills />
       <Projects />
       <Experience />
       <Education />

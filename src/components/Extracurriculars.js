@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text, SimpleGrid, Image, Link } from '@chakra-ui/react';
+import { Box, Heading, Text, SimpleGrid, Image, Link, useColorModeValue } from '@chakra-ui/react';
 
 // Import images
 import WDB from '../assets/wdb.png'; // Adjust the path as needed
@@ -31,6 +31,11 @@ const extracurriculars = [
 ];
 
 function Extracurriculars() {
+  const cardBg = useColorModeValue('white', 'gray.700');
+  const cardColor = useColorModeValue('black', 'white');
+  const cardHoverBg = useColorModeValue('gray.50', 'gray.700');
+  const cardBorderColor = useColorModeValue('gray.200', 'gray.600');
+
   return (
     <Box p={10}>
       <Heading as="h2" size="xl" mb={6} textAlign="center">
@@ -44,8 +49,8 @@ function Extracurriculars() {
             shadow="md"
             borderWidth="1px"
             borderRadius="md"
-            bg="white"
-            color="black"
+            bg={cardBg}
+            color={cardColor}
             transition="transform 0.3s"
             _hover={{ transform: 'scale(1.05)' }}
           >
@@ -58,9 +63,9 @@ function Extracurriculars() {
                 mt={4}
                 p={2}
                 border="1px"
-                borderColor="gray.200"
+                borderColor={cardBorderColor}
                 borderRadius="md"
-                _hover={{ bg: 'gray.50' }}
+                _hover={{ bg: cardHoverBg }}
               >
                 <Image src={activity.linkImage} alt={`Preview of ${activity.link}`} borderRadius="md" boxSize="50px" mr={4} />
                 <Text>{activity.linkTitle}</Text>

@@ -42,16 +42,16 @@ function About() {
         }}
       />
       <Flex direction="column" align="center" bg="rgba(0, 0, 0, 0.7)" p={10} borderRadius="md">
-        <Heading as="h1" size="2xl" mb={3}>
+        <Heading as="h1" size="2xl" mt={5} mb={3}>
           Hello World,
         </Heading>
-        <Text fontWeight='bold' fontSize="2xl" maxW="600px" mb={14}>
+        <Text fontWeight='bold' fontSize="2xl" maxW="600px" mb={10}>
           I'm Richa!
         </Text>
         <Text fontSize="lg" maxW="600px" mb={6}>
-          I am a full stack developer with a passion for building scalable and responsive web applications. Currently pursuing a Bachelor of Science in Electrical Engineering and Computer Science, I have honed my skills in various programming languages, most notably Java, Python, and C. My projects reflect my commitment to leveraging technology to solve real-world problems and enhance the experiences of my peers around me. Beyond coding, I have a deep interest in artificial intelligence, exploring how AI can be integrated into everyday applications. When I'm not busy coding, I enjoy playing badminton, tennis, painting, and cooking!
+          I am a full stack developer with a passion for building scalable and responsive web applications. Currently pursuing a Bachelor of Science in Electrical Engineering and Computer Science, I have honed my skills in various programming languages, most notably through Java, Python, and JavaScript. My projects reflect my commitment to leveraging technology to solve real-world problems and enhance the experiences of my peers around me. Beyond coding, I have a deep interest in artificial intelligence, exploring how AI can be integrated into everyday applications. When I'm not busy coding, I enjoy playing badminton, tennis, painting, and cooking!
         </Text>
-        <Button colorScheme="teal" size="lg" mb={6}>
+        <Button as="a" href='https://profuse-ruby-21e.notion.site/What-I-have-learned-during-my-4-year-coding-journey-ac1c0ab282404e4798f7690520a22cf6' colorScheme="teal" size="lg" mb={6}>
           Learn More
         </Button>
         <Flex justifyContent="center">

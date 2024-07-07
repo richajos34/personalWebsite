@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flex, Box, Link, Button } from '@chakra-ui/react';
 import DarkModeToggle from './DarkModeToggle';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function Navbar() {
   return (
@@ -10,9 +11,6 @@ function Navbar() {
       </Box>
       <Box ml="auto">
         <Link href="#home" mx={2}>
-          Home
-        </Link>
-        <Link href="#about" mx={2}>
           About
         </Link>
         <Link href="#projects" mx={2}>
@@ -21,8 +19,12 @@ function Navbar() {
         <Link href="#experience" mx={2}>
           Experience
         </Link>
-        <Button href="#contact" colorScheme="teal" variant="outline" ml={4}>
-          Get in Touch
+        <Link href="#education" mx={2}>
+          Education
+        </Link>
+        
+        <Button rightIcon={<FaExternalLinkAlt />} as="a" herf='https://github.com/richajos34/personalWebsite' colorScheme="teal" variant="outline" ml={4}>
+          Site Source Code
         </Button>
         <DarkModeToggle />
       </Box>
