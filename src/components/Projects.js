@@ -61,6 +61,13 @@ function Projects() {
       githubLink: 'https://github.com/your-repo/notium',
       images: notium, // Add the path to your project image
     },
+    {
+      title: 'JPMorgan Virtual Expierence',
+      description: 'A full-stack replica of the popular note-taking website Notion.',
+      technologies: [docker, nodejs, mongoDB, reactLogo, javaScriptLogo],
+      githubLink: 'https://github.com/your-repo/notium',
+      images: notium, // Add the path to your project image
+    },
   ];
 
   return (
@@ -74,7 +81,7 @@ function Projects() {
             <Box className="flip-card-inner">
               <Box className="flip-card-front" p={4} bg={cardBg} color={cardTextColor}>
                 <Heading size="md" mt={4}>{project.title}</Heading>
-                <Image src={project.images} alt={`${project.title} Image`} borderRadius="md" mb={4} width="80%" height="200px" objectFit="cover" /> {/* Project Image */}
+                <Image src={project.images} alt={`${project.title} Image`} borderRadius="md" mb={4} width="80%" height="100px" objectFit="cover" /> {/* Project Image */}
                 <Text mt={4}>{project.description}</Text>
                 <Flex mt={4} justifyContent="center" alignItems="center">
                   {project.technologies.map((tech, techIndex) => (

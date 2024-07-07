@@ -24,7 +24,7 @@ function Experience() {
           >
             <Image src={Internship1Logo} alt="Internship 1" boxSize="100px" />
           </Box>
-          <Divider orientation="vertical" height="20px" borderColor={dividerColor} />
+          <Divider orientation="vertical" width="4px" height="40px" borderColor={dividerColor} />
           <Box
             width="100px"
             height="100px"

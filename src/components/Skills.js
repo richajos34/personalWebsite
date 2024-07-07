@@ -30,8 +30,7 @@ function Skills() {
     "C", 
     "SQL",  
     "C++", 
-    "Flutter", 
-    "Dart"
+    "Flutter"
   ];
 
   const gradientOverlay = useColorModeValue(
@@ -58,7 +57,7 @@ function Skills() {
       }}
     >
       <Heading as="h1" size="xl" mb={10}>
-        Tools
+        Skills & Tools
       </Heading>
       <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4, xl: 5 }} spacing={10} textAlign="center" mx="auto" width="90%" maxWidth="1500px">
         {courses.map((course, index) => (

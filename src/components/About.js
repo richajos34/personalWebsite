@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa
 function About() {
   const { colorMode, toggleColorMode } = useColorMode();
   const gradientOverlay = useColorModeValue(
-    'linear(to-b, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7))',
+    'linear(to-b, rgba(200, 255, 230, 1), rgba(255, 255, 255, 1))',
     'linear(to-b, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7))'
   );
 
