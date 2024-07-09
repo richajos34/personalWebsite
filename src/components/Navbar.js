@@ -1,5 +1,7 @@
+// src/components/Navbar.js
+
 import React from 'react';
-import { Flex, Box, Link, Button, useColorModeValue } from '@chakra-ui/react';
+import { Flex, Box, Link, useColorModeValue } from '@chakra-ui/react';
 import DarkModeToggle from './DarkModeToggle';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
@@ -8,11 +10,22 @@ function Navbar() {
   const color = useColorModeValue('white', 'whiteAlpha.900');
 
   return (
-    <Flex bg={bg} color={color} px={4} py={2} alignItems="center" position="fixed" width="100%" top="0" zIndex="1000">
+    <Flex
+      bg={bg}
+      color={color}
+      px={4}
+      py={2}
+      alignItems="center"
+      position="fixed"
+      width="100%"
+      height="7%"
+      top="0"
+      zIndex="1000"
+    >
       <Box fontWeight="bold" fontSize="xl">
         Richa Jos
       </Box>
-      <Box ml="auto">
+      <Flex ml="auto" alignItems="center">
         <Link href="#home" mx={2}>
           About
         </Link>
@@ -25,11 +38,8 @@ function Navbar() {
         <Link href="#education" mx={2}>
           Education
         </Link>
-        <Button rightIcon={<FaExternalLinkAlt />} as="a" href='https://github.com/richajos34/personalWebsite' colorScheme="teal" variant="outline" ml={4}>
-          Site Source Code
-        </Button>
-        <DarkModeToggle />
-      </Box>
+        <DarkModeToggle ml={4}/>
+      </Flex>
     </Flex>
   );
 }

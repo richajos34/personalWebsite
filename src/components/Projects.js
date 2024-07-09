@@ -1,109 +1,145 @@
 import React from 'react';
-import { Box, Heading, Text, Image, Flex, Link, Button, useColorModeValue } from '@chakra-ui/react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
-import Slider from 'react-slick';
-import springLogo from '../assets/Spring_Framework.png';
-import javaLogo from '../assets/java.png';
-import javaScriptLogo from '../assets/javascript.png';
-import mongoDB from '../assets/mongoDB.png';
-import html from '../assets/html.png';
-import css from '../assets/css.png';
-import python from '../assets/python.png';
-import nodejs from '../assets/nodejs.png';
-import reactLogo from '../assets/react.png';
-import docker from '../assets/docker.png';
-import notium from '../assets/notium.png';
-import '../css/projects.css';
+import { Box, Flex, Heading, Text, SimpleGrid, Link, Button, useColorModeValue, IconButton } from '@chakra-ui/react';
+import { FaExternalLinkAlt, FaStar } from 'react-icons/fa';
 
-function Projects() {
-  const cardBg = useColorModeValue('white', 'gray.700');
-  const cardTextColor = useColorModeValue('black', 'white');
-  const cardHoverBg = useColorModeValue('gray.50', 'gray.700');
-  const buttonBg = useColorModeValue('teal.500', 'teal.200');
-  const buttonTextColor = useColorModeValue('white', 'black');
+const projects = [
+  {
+    year: 2024,
+    title: 'My personal Wensite',
+    description: "The source of this website.",
+    links: [
+      { type: 'Source', url: 'https://github.com/your-repo/safezone' },
+    ],
+    stars: 3,
+  },
+  {
+    year: 2023,
+    title: 'SafeZone',
+    description: "Play the accordion with your keyboard!",
+    links: [
+      { type: 'Source', url: '#' },
+    ],
+    stars: 2,
+  },
+  {
+    year: 2023,
+    title: 'AI Recomendation Engine',
+    description: "Play the accordion with your keyboard!",
+    links: [
+      { type: 'Source', url: '#' },
+    ],
+    stars: 2,
+  },
+  {
+    year: 2024,
+    title: 'Video Convolution Processor',
+    description: "A free, open source notes app for the web.",
+    links: [
+      { type: 'Source', url: '#' },
+    ],
+    stars: 6727,
+  },
+  {
+    year: 2024,
+    title: 'JPMorgan Chase Software Engineering Virtual Experience',
+    description: "A free, open source notes app for the web.",
+    links: [
+      { type: 'Source', url: '#' },
+    ],
+    stars: 6727,
+  },
+  {
+    year: 2024,
+    title: 'Cricket Visualizer',
+    description: "A free, open source notes app for the web.",
+    links: [
+      { type: 'Source', url: '#' },
+    ],
+    stars: 6727,
+  },
+  {
+    year: 2022,
+    title: 'Notium',
+    description: "A free, open source notes app for the web.",
+    links: [
+      { type: 'Source', url: '#' },
+    ],
+    stars: 6727,
+  },
+  {
+    year: 2022,
+    title: 'Contest Calling',
+    description: "A free, open source notes app for the web.",
+    links: [
+      { type: 'Source', url: '#' },
+    ],
+    stars: 6727,
+  },
+  {
+    year: 2020,
+    title: 'Eudiemonia',
+    description: "A free, open source notes app for the web.",
+    links: [
+      { type: 'Article', url: '#' },
+    ],
+    stars: 6727,
+  },
+  // Add more projects here
+];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '0',
-  };
-
-  const projectData = [
-    {
-      title: 'SafeZone',
-      description: "Interactive map application used for visualizing UC Berkeley's Crime data.",
-      technologies: [springLogo, javaLogo, javaScriptLogo, mongoDB, html, css],
-      githubLink: 'https://github.com/your-repo/safezone',
-      images: '../assets/safezone.png', // Add the path to your project image
-    },
-    {
-      title: 'Cricket Visualizer',
-      description: 'A simulation of a cricket game with optimal cricket passing algorithms and data structures.',
-      technologies: [python],
-      githubLink: 'https://github.com/your-repo/cricket-visualizer',
-      images: '../assets/cricket-visualizer.png', // Add the path to your project image
-    },
-    {
-      title: 'Video Convolution Processor',
-      description: 'Optimized 2D convolutions for video processing to achieve significant speedups.',
-      technologies: [docker, nodejs, mongoDB, reactLogo, javaScriptLogo],
-      githubLink: 'https://github.com/your-repo/video-convolution-processor',
-      image: '../assets/video-convolution-processor.png', // Add the path to your project image
-    },
-    {
-      title: 'Notium',
-      description: 'A full-stack replica of the popular note-taking website Notion.',
-      technologies: [docker, nodejs, mongoDB, reactLogo, javaScriptLogo],
-      githubLink: 'https://github.com/your-repo/notium',
-      images: notium, // Add the path to your project image
-    },
-    {
-      title: 'JPMorgan Virtual Expierence',
-      description: 'A full-stack replica of the popular note-taking website Notion.',
-      technologies: [docker, nodejs, mongoDB, reactLogo, javaScriptLogo],
-      githubLink: 'https://github.com/your-repo/notium',
-      images: notium, // Add the path to your project image
-    },
-  ];
+function ProjectsGrid() {
+  const cardBg = useColorModeValue('white', 'gray.800');
+  const textColor = useColorModeValue('gray.800', 'white');
+  const cardShadow = useColorModeValue('md', 'dark-lg');
 
   return (
-    <Box id="projects" textAlign="center" py={10} px={6}>
-      <Heading as="h1" size="2xl" mb={4}>
+    <Box py={10} px={6} maxWidth="85%" mx="auto">
+      <Heading as="h2" size="xl" mb={6} textAlign="center">
         Projects
       </Heading>
-      <Slider {...settings}>
-        {projectData.map((project, index) => (
-          <Box key={index} p={4} className="flip-card">
-            <Box className="flip-card-inner">
-              <Box className="flip-card-front" p={4} bg={cardBg} color={cardTextColor}>
-                <Heading size="md" mt={4}>{project.title}</Heading>
-                <Image src={project.images} alt={`${project.title} Image`} borderRadius="md" mb={4} width="80%" height="100px" objectFit="cover" /> {/* Project Image */}
-                <Text mt={4}>{project.description}</Text>
-                <Flex mt={4} justifyContent="center" alignItems="center">
-                  {project.technologies.map((tech, techIndex) => (
-                    <Image key={techIndex} src={tech} alt="Technology Logo" boxSize="40px" mx={2} />
-                  ))}
-                </Flex>
-              </Box>
-              <Box className="flip-card-back" p={4} bg={cardBg} color={cardTextColor}>
-                <Heading size="md" mt={4}>{project.title}</Heading>
-                <Text mt={4}>Detailed information about the {project.title} project, including its features and technologies used.</Text>
-                <Link href={project.githubLink} isExternal mt={4} _hover={{ textDecoration: 'none' }}>
-                  <Button rightIcon={<FaExternalLinkAlt />} bg={buttonBg} color={buttonTextColor} variant="outline" mt={4} p={2}>
-                    Source
-                  </Button>
-                </Link>
-              </Box>
-            </Box>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+        {projects.map((project, index) => (
+          <Box
+            key={index}
+            bg={cardBg}
+            color={textColor}
+            p={6}
+            borderRadius="md"
+            boxShadow={cardShadow}
+            transition="transform 0.3s"
+            _hover={{ transform: 'scale(1.05)' }}
+          >
+            <Flex justifyContent="space-between" alignItems="center" mb={4}>
+              <Text fontWeight="bold" fontSize="xl">{project.year}</Text>
+              <Flex alignItems="center">
+                <Text mr={2}>{project.stars}</Text>
+                <FaStar color="yellow" />
+              </Flex>
+            </Flex>
+            <Heading as="h3" size="md" mb={2}>{project.title}</Heading>
+            <Text mb={4}>{project.description}</Text>
+            <Flex justifyContent="space-between">
+              {project.links.map((link, linkIndex) => (
+                <Button
+                  key={linkIndex}
+                  as="a"
+                  href={link.url}
+                  rightIcon={<FaExternalLinkAlt />}
+                  size="sm"
+                  colorScheme="teal"
+                  variant="outline"
+                  mb={2}
+                  mr={2}
+                >
+                  {link.type}
+                </Button>
+              ))}
+            </Flex>
           </Box>
         ))}
-      </Slider>
+      </SimpleGrid>
     </Box>
   );
 }
 
-export default Projects;
+export default ProjectsGrid;
