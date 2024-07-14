@@ -22,49 +22,35 @@ const projects = [
     title: 'My Personal Website',
     description: "The source of this website.",
     links: [
-      { type: 'Source', url: 'https://github.com/your-repo/safezone' },
+      { type: 'Source', url: 'https://github.com/richajos34/personalWebsite' },
     ],
-    stars: 3,
     technologies: [html, css, javaScriptLogo, reactLogo]
+  },
+  {
+    year: 2024,
+    title: 'AI Recommendation Engine',
+    description: "Book recommendation engine to suggests books to users based on their preferences.",
+    links: [
+      { type: 'Source', url: 'https://github.com/richajos34/Recommendation-Engine' },
+    ],
+    technologies: [javaLogo, springLogo, mongoDB, reactLogo]
   },
   {
     year: 2023,
     title: 'SafeZone',
     description: "Interactive map application used for visualizing UC Berkeley's Crime data.",
     links: [
-      { type: 'Source', url: '#' },
+      { type: 'Source', url: 'https://github.com/richajos34/SafeZone' },
     ],
-    stars: 2,
     technologies: [springLogo, javaLogo, mongoDB, html, css, docker]
-  },
-  {
-    year: 2023,
-    title: 'AI Recommendation Engine',
-    description: "Book recommendation engine to suggests books to users based on their preferences.",
-    links: [
-      { type: 'Source', url: '#' },
-    ],
-    stars: 2,
-    technologies: [cPlusPlus, nodejs, mySQL]
-  },
-  {
-    year: 2024,
-    title: 'Video Convolution Processor',
-    description: "Convolution framework, with enhanced performance through parallel processing.",
-    links: [
-      { type: 'Source', url: '#' },
-    ],
-    stars: 6727,
-    technologies: [c]
   },
   {
     year: 2024,
     title: 'JPMorgan Chase Software Engineering Virtual Experience',
     description: "Financial software solutions through implementing transaction processing algorithms",
     links: [
-      { type: 'Source', url: '#' },
+      { type: 'Source', url: 'https://github.com/richajos34/forage-jpmc-swe-task-1' },
     ],
-    stars: 6727,
     technologies: [python]
   },
   {
@@ -72,19 +58,26 @@ const projects = [
     title: 'Cricket Visualizer',
     description: "A simulation of a cricket game with optimal cricket passing algorithms and data structures.",
     links: [
-      { type: 'Source', url: '#' },
+      { type: 'Source', url: 'https://github.com/richajos34/cricketScoring' },
     ],
-    stars: 6727,
     technologies: [python]
+  },
+  {
+    year: 2024,
+    title: 'Video Convolution Processor',
+    description: "Convolution framework, with enhanced performance through parallel processing.",
+    links: [
+      { type: 'Source', url: 'https://inst.eecs.berkeley.edu/~cs61c/sp24/projects/proj4/' },
+    ],
+    technologies: [c]
   },
   {
     year: 2022,
     title: 'Notium',
     description: "A full-stack replica of the popular note-taking website Notion.",
     links: [
-      { type: 'Source', url: '#' },
+      { type: 'Source', url: 'https://github.com/minhnguy19/wdb-bootcamp' },
     ],
-    stars: 6727,
     technologies: [reactLogo, javaScriptLogo, nodejs]
   },
   {
@@ -92,9 +85,8 @@ const projects = [
     title: 'Contest Calling',
     description: "Backend for contest calling technical",
     links: [
-      { type: 'Source', url: '#' },
+      { type: 'Source', url: 'https://github.com/richajos34/Calling_App' },
     ],
-    stars: 6727,
     technologies: [nodejs, javaScriptLogo]
   },
   {
@@ -102,9 +94,8 @@ const projects = [
     title: 'Eudiemonia',
     description: " A mental health mobile application",
     links: [
-      { type: 'Article', url: '#' },
+      { type: 'Article', url: 'https://aguilar.house.gov/2020/12/18/aguilar-names-winners-2020-congressional-app-challenge/' },
     ],
-    stars: 6727,
     technologies: [flutter, javaScriptLogo]
   },
   // Add more projects here
@@ -114,7 +105,6 @@ function ProjectsGrid() {
   const cardBg = useColorModeValue('white', 'gray.800');
   const textColor = useColorModeValue('gray.800', 'white');
   const cardShadow = useColorModeValue('md', 'dark-lg');
-  const iconFilter = useColorModeValue('none', 'grayscale(100%) brightness(150%)');
 
   return (
     <Box py={10} px={6} maxWidth="85%" mx="auto">
@@ -135,10 +125,6 @@ function ProjectsGrid() {
           >
             <Flex justifyContent="space-between" alignItems="center" mb={4}>
               <Text fontWeight="bold" fontSize="xl">{project.year}</Text>
-              <Flex alignItems="center">
-                <Text mr={2}>{project.stars}</Text>
-                <FaStar color="yellow" />
-              </Flex>
             </Flex>
             <Heading as="h3" size="md" mb={2}>{project.title}</Heading>
             <Text mb={4}>{project.description}</Text>
@@ -150,7 +136,6 @@ function ProjectsGrid() {
                   alt={`${tech} Logo`} 
                   boxSize={tech = "35px"} 
                   mx={1} 
-                  filter={iconFilter} 
                 />
               ))}
             </Flex>

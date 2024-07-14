@@ -26,18 +26,6 @@ function Navbar() {
         Richa Jos
       </Box>
       <Flex ml="auto" alignItems="center">
-        <Link href="#home" mx={2}>
-          About
-        </Link>
-        <Link href="#projects" mx={2}>
-          Projects
-        </Link>
-        <Link href="#experience" mx={2}>
-          Experience
-        </Link>
-        <Link href="#education" mx={2}>
-          Education
-        </Link>
         <DarkModeToggle ml={4}/>
       </Flex>
     </Flex>

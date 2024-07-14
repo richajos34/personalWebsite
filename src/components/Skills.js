@@ -38,6 +38,9 @@ function Skills() {
     'linear(to-b, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0))'
   );
 
+  const skillColor = useColorModeValue("teal.500", "#7be0e5")
+
+
   return (
     <Box
       id="coursework"
@@ -64,7 +67,7 @@ function Skills() {
           <List key={index}>
             <ListItem>
               <Flex alignItems="center">
-                <ListIcon as={CheckCircleIcon} color="teal.500" />
+                <ListIcon as={CheckCircleIcon} color={skillColor} />
                 <Text size="lg">{course}</Text>
               </Flex>
             </ListItem>

@@ -51,14 +51,10 @@ function About() {
         <Text fontSize="lg" maxW="600px" mb={6}>
           I am a full stack developer with a passion for building scalable and responsive web applications. Currently pursuing a Bachelor of Science in Electrical Engineering and Computer Science, I have honed my skills in various programming languages, most notably through Java, Python, and JavaScript. My projects reflect my commitment to leveraging technology to solve real-world problems and enhance the experiences of my peers around me. Beyond coding, I have a deep interest in artificial intelligence, exploring how AI can be integrated into everyday applications. When I'm not busy coding, I enjoy playing badminton, tennis, painting, and cooking!
         </Text>
-        <Button as="a" href='https://profuse-ruby-21e.notion.site/What-I-have-learned-during-my-4-year-coding-journey-ac1c0ab282404e4798f7690520a22cf6' colorScheme="teal" size="lg" mb={6}>
-          Learn More
-        </Button>
         <Flex justifyContent="center">
           <IconButton as="a" href="https://github.com/richajos34" icon={<FaGithub />} aria-label="GitHub" m={2} />
           <IconButton as="a" href="https://www.linkedin.com/in/richa-jos/" icon={<FaLinkedin />} aria-label="LinkedIn" m={2} />
           <IconButton as="a" href="mailto:richajos34@berkeley.edu" icon={<FaEnvelope />} aria-label="Email" m={2} />
-          <IconButton as="a" href="/Users/richajos/Desktop/Projects/personalWebsite/src/assets/Resume_Richa_Jos.pdf" aria-label="Download Resume" icon={<FaFileDownload />} m={2} download />
         </Flex>
       </Flex>
     </Box>

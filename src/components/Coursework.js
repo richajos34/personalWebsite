@@ -1,8 +1,9 @@
 // src/components/Coursework.js
 
 import React from 'react';
-import { Box, Heading, Text, Flex, List, ListItem, ListIcon, SimpleGrid } from '@chakra-ui/react';
+import { Box, Heading, Text, Flex, List, ListItem, ListIcon, SimpleGrid, useColorModeValue} from '@chakra-ui/react';
 import { CheckCircleIcon } from '@chakra-ui/icons';
+
 
 function Coursework() {
   const courses = [
@@ -18,6 +19,8 @@ function Coursework() {
     "Blockchain for Developers"
   ];
 
+  const courseColor = useColorModeValue("teal.500", "#7be0e5")
+
   return (
     <Box id="coursework" textAlign="center" py={10} px={6}>
       <Heading as="h1" size="xl" mb={4}>
@@ -28,7 +31,7 @@ function Coursework() {
           <List key={index}>
             <ListItem>
               <Flex alignItems="center">
-                <ListIcon as={CheckCircleIcon} color="teal.500" />
+                <ListIcon as={CheckCircleIcon} color={courseColor} />
                 <Text>{course}</Text>
               </Flex>
             </ListItem>

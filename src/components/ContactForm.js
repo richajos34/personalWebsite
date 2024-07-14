@@ -17,21 +17,36 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const sendAutoReply = () => {
+      const autoReplyData = {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message
+      };
+    }
+
+    const emailData = {
+      ...formData,
+      recipient_email: 'richajos24@gmail.com', // Add recipient email
+    };
+
     emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
-      formData,
-      'YOUR_USER_ID'
+      'service_2daaoyk',
+      'template_dhpnlwr',
+      emailData,
+      'aP31SpabS8vr0dJOB'
     ).then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       toast({
         title: 'Message Sent.',
-        description: "We've received your message and will get back to you shortly.",
+        description: "I've received your message and will get back to you shortly.",
         status: 'success',
         duration: 5000,
         isClosable: true,
       });
       setFormData({ name: '', email: '', message: '' });
+
+      sendAutoReply();
     }).catch((err) => {
       console.log('FAILED...', err);
       toast({
