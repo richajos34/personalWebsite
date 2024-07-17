@@ -2,32 +2,32 @@ import React from 'react';
 import { Box, Heading, Text, SimpleGrid, Image, Link, useColorModeValue } from '@chakra-ui/react';
 
 // Import images
-import WDB from '../assets/wdb.png'; // Adjust the path as needed
-import CSK from '../assets/csk.png'; // Replace with actual paths
-import whizara from '../assets/whizara.png'; // Replace with actual paths
+import WDB from '../assets/wdb.png';
+import CSK from '../assets/csk.png';
+import whizara from '../assets/whizara.png';
 
 const extracurriculars = [
   {
     title: 'Full-Stack Developer',
-    description: 'Participated in building and programming robots for various competitions.',
-    link: 'https://www.webatberkeley.org/', // Replace with the actual link
+    description: 'Worked on a team to develop a full-stack web application for a local buisnesss.',
+    link: 'https://www.webatberkeley.org/',
     linkTitle: 'Web Development at Berkeley',
-    linkImage: WDB // Replace with your preview image path
+    linkImage: WDB
   },
   {
     title: 'Coding Instructor',
-    description: 'Competed in inter-collegiate debates, honing public speaking and critical thinking skills.',
-    link: 'https://www.whizara.com/', // Replace with the actual link
+    description: 'Taught coding to students at local schools in Berkeley and Oakland.',
+    link: 'https://www.whizara.com/',
     linkTitle: 'Whizara',
-    linkImage: whizara // Replace with your preview image path
+    linkImage: whizara 
   },
   {
     title: 'Teaching Assistant',
-    description: 'Volunteered at local shelters and community events, providing support and services.',
-    link: 'https://www.instagram.com/cs.kickstart/', // Replace with the actual link
+    description: 'Provided an introduction to CS61A to unrepresented students at UC Berkeley.',
+    link: 'https://www.instagram.com/cs.kickstart/',
     linkTitle: 'Computer Science Kickstart',
-    linkImage: CSK // Replace with your preview image path
-  },
+    linkImage: CSK 
+  }
 ];
 
 function Extracurriculars() {

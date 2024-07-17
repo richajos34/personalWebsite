@@ -2,6 +2,10 @@ import React from 'react';
 import { Box, Flex, Heading, Text, Button, IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
 
+/**
+ * The `About` component displays information about me, including my background, skills, and interests.
+ * It renders a full-screen section with a background image and gradient overlay, and includes links to my GitHub, LinkedIn, and email.
+ */
 function About() {
   const { colorMode, toggleColorMode } = useColorMode();
   const gradientOverlay = useColorModeValue(
@@ -27,7 +31,6 @@ function About() {
         right="0"
         bottom="0"
         bgColor={'gray.700'}
-        //bgImage="url('https://t3.ftcdn.net/jpg/07/73/17/96/360_F_773179623_rMQ1L1EO0XmFm6pM1o51lO6SXyPDMktH.jpg')"
         bgSize="cover"
         bgPosition="center"
         zIndex="-1"
@@ -49,7 +52,7 @@ function About() {
           I'm Richa!
         </Text>
         <Text fontSize="lg" maxW="600px" mb={6}>
-          I am a full stack developer with a passion for building scalable and responsive web applications. Currently pursuing a Bachelor of Science in Electrical Engineering and Computer Science, I have honed my skills in various programming languages, most notably through Java, Python, and JavaScript. My projects reflect my commitment to leveraging technology to solve real-world problems and enhance the experiences of my peers around me. Beyond coding, I have a deep interest in artificial intelligence, exploring how AI can be integrated into everyday applications. When I'm not busy coding, I enjoy playing badminton, tennis, painting, and cooking!
+          I am a full stack developer and hobbyist UI/UX designer with a passion for building scalable and responsive web applications. Currently pursuing a Bachelor of Science in Electrical Engineering and Computer Science, I have honed my skills in various programming languages, most notably through Java, Python, and JavaScript. My projects reflect my commitment to leveraging technology to solve real-world problems and enhance the experiences of my peers around me. Beyond coding, I have a deep interest in artificial intelligence, exploring how AI can be integrated into everyday applications. When I'm not busy coding, I enjoy playing badminton, tennis, painting, and cooking!
         </Text>
         <Flex justifyContent="center">
           <IconButton as="a" href="https://github.com/richajos34" icon={<FaGithub />} aria-label="GitHub" m={2} />

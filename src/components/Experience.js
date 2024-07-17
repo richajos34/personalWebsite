@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Heading, Text, Image, Flex, Stack, Divider, Spacer, useColorModeValue } from '@chakra-ui/react';
-import Internship2Logo from '../assets/geopogo.jpeg'; // Adjust the path if needed
-import Internship1Logo from '../assets/yodaLabs.jpeg'; // Adjust the path if needed
-import Internship3Logo from '../assets/gittyInc.jpeg'; // Adjust the path if needed
+import Internship2Logo from '../assets/geopogo.jpeg';
+import Internship1Logo from '../assets/yodaLabs.jpeg';
+import Internship3Logo from '../assets/gittyInc.jpeg';
 
 function Experience() {
   const cardBg = useColorModeValue('white', 'gray.700');

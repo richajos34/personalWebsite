@@ -1,8 +1,15 @@
 import React from 'react';
 import { Box, Heading, Text, Image, Flex, Stack, useColorModeValue, VStack } from '@chakra-ui/react';
-import UCLogo from '../assets/Berkeley.png'; // Adjust the path if needed
-import RHSLogo from '../assets/redlandshs.png'; // Adjust the path if needed
+import UCLogo from '../assets/Berkeley.png';
+import RHSLogo from '../assets/redlandshs.png';
 
+/**
+ * Renders an education section with information about the user's education background.
+ * 
+ * The component displays two education experiences: UC Berkeley and Redlands High School.
+ * For each experience, it shows the institution's logo, the degree/diploma earned, and the dates attended.
+ * The component uses Chakra UI components to style the layout and appearance.
+ */
 function Education() {
   const cardBg = useColorModeValue('white', 'gray.700');
   const textColor = useColorModeValue('gray.800', 'white');

@@ -5,6 +5,14 @@ import { Box, Heading, Text, Flex, List, ListItem, ListIcon, SimpleGrid, useColo
 import { CheckCircleIcon } from '@chakra-ui/icons';
 
 
+/**
+ * Renders a section displaying a list of coursework.
+ * 
+ * The `Coursework` component displays a list of courses in a responsive grid layout.
+ * Each course is displayed as a list item with a checkmark icon and the course title.
+ * The component uses the `useColorModeValue` hook from Chakra UI to adjust the color
+ * of the checkmark icon based on the current color mode (light or dark).
+ */
 function Coursework() {
   const courses = [
     "Structure and Interpretation of Computer Programs",

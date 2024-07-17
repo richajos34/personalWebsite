@@ -2,12 +2,21 @@ import React, { useState } from 'react';
 import { Box, Button, FormControl, FormLabel, Input, Textarea, useToast, useColorMode, Grid, GridItem, Image, Text, VStack } from '@chakra-ui/react';
 import emailjs from 'emailjs-com';
 
-import profileImageSrc from '../assets/profilePhoto.png'; // Adjust the path if needed
+import profileImageSrc from '../assets/profilePhoto.png';
 
+/**
+ * Renders a contact form component that allows users to send a message.
+ * 
+ * The component includes fields for the user's name, email, and message, as well as a submit button.
+ * When the form is submitted, the message is sent using the emailjs library, and a success or error toast notification is displayed.
+ * The component also includes a profile image and some text encouraging the user to get in touch.
+ * 
+ * @returns {JSX.Element} The contact form component
+ */
 function ContactForm() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const toast = useToast();
-  const { colorMode } = useColorMode(); // Access the current color mode
+  const { colorMode } = useColorMode();
   const isDark = colorMode === 'dark';
 
   const handleChange = (e) => {
@@ -27,7 +36,7 @@ function ContactForm() {
 
     const emailData = {
       ...formData,
-      recipient_email: 'richajos24@gmail.com', // Add recipient email
+      recipient_email: 'richajos24@gmail.com',
     };
 
     emailjs.send(

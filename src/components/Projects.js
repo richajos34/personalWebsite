@@ -13,9 +13,17 @@ import reactLogo from '../assets/react.png';
 import docker from '../assets/docker.png';
 import c from '../assets/C.png'
 import flutter from '../assets/flutter.png';
-import cPlusPlus from '../assets/C++.png'
-import mySQL from '../assets/mySQL.png'
 
+
+/**
+ * An array of project objects, each representing a personal or academic project.
+ * Each project object has the following properties:
+ * - year: The year the project was completed.
+ * - title: The title of the project.
+ * - description: A brief description of the project.
+ * - links: An array of link objects, each with a 'type' and 'url' property.
+ * - technologies: An array of image paths representing the technologies used in the project.
+ */
 const projects = [
   {
     year: 2024,
@@ -98,7 +106,6 @@ const projects = [
     ],
     technologies: [flutter, javaScriptLogo]
   },
-  // Add more projects here
 ];
 
 function ProjectsGrid() {

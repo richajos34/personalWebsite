@@ -9,6 +9,7 @@ import Coursework from './components/Coursework';
 import ContactForm from './components/ContactForm';
 import Extracurriculars from './components/Extracurriculars';
 import Skills from './components/Skills';
+import ContractProjectsGrid from './components/ContractProjectsGrid';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Projects />
       <Experience />
+      <ContractProjectsGrid />
       <Education />
       <Extracurriculars />
       <Coursework />

@@ -1,9 +1,17 @@
-// src/components/Coursework.js
-
 import React from 'react';
 import { Box, Heading, Text, Flex, List, ListItem, ListIcon, SimpleGrid, useColorModeValue } from '@chakra-ui/react';
 import { CheckCircleIcon } from '@chakra-ui/icons';
 
+/**
+ * Renders a section displaying the developer's skills and tools.
+ * 
+ * The component displays a grid of skills and tools, with each item
+ * represented by a list item with a checkmark icon and the skill/tool name.
+ * The grid is responsive and adjusts the number of columns based on the screen size.
+ * 
+ * The component also applies a gradient overlay to the section to create a subtle
+ * visual effect.
+ */
 function Skills() {
   const courses = [
     "Node.js", 
