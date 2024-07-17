@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/personalWebsite/static/css/main.84b4ea0f.css",
-    "main.js": "/personalWebsite/static/js/main.bec9aa74.js",
+    "main.js": "/personalWebsite/static/js/main.efbe7d26.js",
     "static/media/Berkeley.png": "/personalWebsite/static/media/Berkeley.859861c5b37fb7ed7033.png",
     "static/media/profilePhoto.png": "/personalWebsite/static/media/profilePhoto.7959f84dbd308f3d91cb.png",
     "static/media/C.png": "/personalWebsite/static/media/C.c0da8156a8d17281c29e.png",
-    "static/media/C++.png": "/personalWebsite/static/media/C++.053a898d752aef72651e.png",
+    "static/media/aws.png": "/personalWebsite/static/media/aws.850296a094250f4a242e.png",
     "static/media/redlandshs.png": "/personalWebsite/static/media/redlandshs.3c6a36f88d253bef436e.png",
     "static/media/Spring_Framework.png": "/personalWebsite/static/media/Spring_Framework.7ffbe3c72f4d4e57dc5d.png",
     "static/media/geopogo.jpeg": "/personalWebsite/static/media/geopogo.ccbf690098698ac3773e.jpeg",
@@ -18,10 +18,10 @@
     "static/media/slick.woff": "/personalWebsite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/personalWebsite/index.html",
     "main.84b4ea0f.css.map": "/personalWebsite/static/css/main.84b4ea0f.css.map",
-    "main.bec9aa74.js.map": "/personalWebsite/static/js/main.bec9aa74.js.map"
+    "main.efbe7d26.js.map": "/personalWebsite/static/js/main.efbe7d26.js.map"
   },
   "entrypoints": [
     "static/css/main.84b4ea0f.css",
-    "static/js/main.bec9aa74.js"
+    "static/js/main.efbe7d26.js"
   ]
 }
