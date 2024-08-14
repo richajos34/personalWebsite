@@ -69,7 +69,7 @@ function Experience() {
             January 2024 - May 2024
           </Text>
           <Text fontSize="md" mb={4}>
-          I worked on a comprehensive audio transcription service that supports over 900 users, integrating real-time audio storage, user authentication, and advanced data processing features. The project utilized Python, Supabase, and React, and was deployed on Render. I implemented a robust RESTful API with Django, ensuring secure data transactions through role-based access controls. To enhance functionality, I integrated Whisperer and GPT-3.5 for accurate transcription and in-depth analysis of audio files, which effectively reduced manual processing time by over 50%. This system provided seamless real-time audio storage and user authentication, offering a reliable and efficient solution for managing and analyzing audio data.
+          I worked on a Field Service Management System using React, Java, MySQL, and Spring as the primary tools for development. I optimized the service to cache location data, reducing database load by around 60% and improving application performance by partitioning and indexing data for efficient retrieval. I also designed and implemented a management API, along with authentication and authorization using role-based access control. Embracing Test-Driven Development (TDD), I tested services using JUnit, Postman, and JMeter, and implemented a CI/CD pipeline for integration testing.
           </Text>
           <Spacer />
           <Text fontSize="xl" mb={2}>
